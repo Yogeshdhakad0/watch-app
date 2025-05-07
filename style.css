@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-width: 100vh;
+    color: white;
+
+
+}
+.container{
+    position: relative;
+}
+.colck{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(2, 7, 5);
+    border: 2px solid rgb(255, 81, 0);
+    box-shadow: 0px 0px 30px rgb(101, 205, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colck span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+.colck span b{
+transform:  rotate(calc(-30deg * var(--i)));
+display: inline-block;
+font-size: 20px;
+}
+.colck::before{
+    content: '';
+    position: absolute ;
+    width: 8px ;
+    height: 8px 
+    ;
+    border-radius: 50%;
+    background-color: white;
+}
+.hand{
+    position: absolute;
+    display: flex;justify-content: center ;
+    align-items: flex-end;
+}
+.hand i{
+    position: absolute;
+    background-color:var(--clr);
+    width: 4px ;
+    height: var(--h);
+    border-radius: 8PX;
+
+    
+}
